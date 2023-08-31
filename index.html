@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <div class="score-container">
+          <h4>Score</h4>
+          <p id="score">0</p>
+        </div>
+      </header>
+
+      <main id="main">
+        <button class="btn-circle btn-paper choice-click" data-choice="paper">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="paper-icon" />
+          </span>
+        </button>
+
+        <button
+          class="btn-circle btn-scissors choice-click"
+          data-choice="scissors"
+        >
+          <span class="wrapper">
+            <img src="./images/icon-scissors.svg" alt="scissors-icon" />
+          </span>
+        </button>
+
+        <button class="btn-circle btn-rock choice-click" data-choice="rock">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" alt="rock-icon" />
+          </span>
+        </button>
+      </main>
+
+      <button class="btn-rules" id="rules">Rules</button>
+    </div>
+
+    <div class="rules-container" id="modal">
+      <img src="./images/image-rules.svg" alt="rules" />
+      <button id="close-modal">
+        <img src="./images/icon-close.svg" alt="close button" />
+      </button>
+    </div>
+
+    <div class="selection" id="selection">
+      <div class="user-selection">
+        <h2>You picked</h2>
+        <button class="btn-circle btn-paper" id="user_select">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="paper-icon" />
+          </span>
+        </button>
+      </div>
+
+      <div class="result-section">
+        <h1>YOU <span id="result">win</span></h1>
+        <button id="reset">PLay again</button>
+      </div>
+
+      <div class="computer-selection">
+        <h2>The House picked</h2>
+        <button class="btn-circle btn-paper" id="computer_select">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" alt="paper-icon" />
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://ramzan457.github.io/cybersecurity-portfolio/">
+        Mohammad Ramzan
+      </a>
+      .
+    </div>
+  </body>
+</html>
